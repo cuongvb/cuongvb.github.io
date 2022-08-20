@@ -1,0 +1,231 @@
+body {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.div-bdall h3 {
+  padding-bottom: 1rem;
+  width: 100%;
+  border-bottom: 1px solid black;
+  color: blue;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+}
+
+#goals,
+#scopes,
+#team,
+#primary {
+  padding-bottom: 6%;
+  background-color: #e7f5ff83;
+}
+
+#goals,
+#team,
+#timeline {
+  padding-top: 20px;
+  border-top: 15px solid blue;
+}
+
+/* BORDER */
+#primary,
+#team {
+  border-left: 15px solid blue;
+}
+
+#primary,
+#scopes {
+  border-top: 15px solid blue;
+  border-bottom: 15px solid blue;
+  padding-top: 20px;
+}
+#goals,
+#scopes {
+  border-left: 15px solid blue;
+}
+#timeline {
+  background-color: #e7f5ff83;
+  border-left: 15px solid blue;
+  border-right: 15px solid blue;
+  border-bottom: 15px solid blue;
+}
+
+/* GOALS */
+#goals .icon {
+  font-size: 200%;
+  width: 20%;
+  text-align: center;
+}
+
+#goals .row {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.151);
+  margin-top: 1rem;
+}
+
+/* TEAM */
+#team .icon {
+  font-size: 250%;
+  text-align: center;
+  padding: 0;
+}
+.div-mem {
+  padding: 3% 0;
+}
+#team td {
+  vertical-align: middle;
+}
+
+#team td p {
+  margin: 0;
+}
+
+/* PRIMARY */
+#primary .icon {
+  text-align: center;
+  vertical-align: top;
+  width: 25%;
+}
+
+#primary .icon i {
+  font-size: 200%;
+  padding-top: 1rem;
+}
+
+/* TIMELINE */
+#timeline .circle {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 30px;
+  background-color: #9775fa;
+  color: #f3f0ff;
+  border: 0.5px solid gray;
+  border-radius: 50%;
+}
+
+#timeline .icon {
+  display: flex;
+  vertical-align: middle;
+  justify-content: center;
+}
+#timeline table h1 {
+  padding-top: 20px;
+}
+
+#timeline table p {
+  margin-bottom: 0;
+}
+
+#timeline table td:last-child {
+  padding-left: 20px;
+  border-bottom: 2px dashed #748ffc;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1345px) {
+  #timeline .circle {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  #timeline h5 {
+    font-size: 1rem;
+  }
+
+  #timeline p {
+    font-size: 0.9rem;
+  }
+}
+/* TABLET */
+@media only screen and (max-width: 1200px) {
+  .div-bdall h3 {
+    padding-left: 3%;
+  }
+
+  #goals,
+  #scopes,
+  #team,
+  #primary,
+  #timeline,
+  .div-bdall {
+    border: none;
+  }
+
+  #goals,
+  #team,
+  #scopes,
+  #primary,
+  #timeline {
+    padding: 2% 5% 6% 4%;
+  }
+
+  #team .div-pl {
+    padding-left: 5%;
+  }
+  #scopes .div-pl {
+    padding-left: 2%;
+  }
+
+  .div-mem {
+    padding-bottom: 0;
+    padding-top: 1%;
+  }
+
+  #primary .icon {
+    width: 10%;
+  }
+
+  #primary .icon i {
+    padding-top: 0;
+  }
+
+  /* MOBILE */
+  @media only screen and (max-width: 767px) {
+    #goals,
+    #scopes,
+    #team,
+    #primary,
+    #timeline,
+    .div-bdall {
+      border: none;
+    }
+
+    #goals,
+    #team,
+    #scopes,
+    #primary,
+    #timeline {
+      padding: 2% 5% 6% 4%;
+    }
+
+    #team .div-pl {
+      padding-left: 2.5rem;
+    }
+
+    #scopes .div-pl {
+      padding-left: 2%;
+    }
+
+    .div-mem {
+      padding-bottom: 0;
+      padding-top: 1%;
+    }
+
+    #goals .icon,
+    #team .icon {
+      display: none;
+    }
+
+    #primary .icon {
+      width: 10%;
+      vertical-align: middle;
+    }
+
+    #primary .icon i {
+      padding-top: 0;
+    }
+  }
+}
